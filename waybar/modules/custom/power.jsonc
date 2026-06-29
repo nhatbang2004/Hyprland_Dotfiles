@@ -1,0 +1,8 @@
+{
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout",
+        "on-click-right": "systemctl poweroff",
+        "tooltip": false
+    }
+}

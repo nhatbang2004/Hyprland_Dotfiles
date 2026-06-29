@@ -1,0 +1,7 @@
+{
+       "custom/archicon": {
+    "format": "",
+   "on-click": "$HOME/.config/rofi/launcher.sh",
+    "tooltip": false
+  }
+}

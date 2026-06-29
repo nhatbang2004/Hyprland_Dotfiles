@@ -1,0 +1,14 @@
+@import 'matugen/matugen-swaync.css';
+
+@define-color background @surface;
+@define-color foreground #cdd6f4;
+@define-color select     #585b70;
+
+@define-color pink       #f5c2e7;
+@define-color purple     #cba6f7;
+@define-color red        @error;
+@define-color orange     #fab387;
+@define-color yellow     #f9e2af;
+@define-color green      #a6e3a1;
+@define-color blue       @primary;
+@define-color gray       #45475a;

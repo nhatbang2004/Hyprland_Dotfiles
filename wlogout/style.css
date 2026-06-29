@@ -1,0 +1,95 @@
+/* @import "$HOME/.config/colors/colors.css" */
+@import "../waybar/colors/colors.css";
+
+
+window {
+    font-family: "JetBrainsMono Nerd Font Propo";
+    font-size: 16pt;
+   /* color: @foreground; */
+    /* text */
+    background-color: @surface-alpha; 
+   
+}
+
+
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    /*background-color: transparent; */
+   background-color: @on_secondary;
+   border-style: solid;
+	border-width: 3px; 
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0 10px 2px transparent;
+    border-radius: 36px;
+    border-color: @primary;
+    margin: 10px;
+    color: @foreground;
+}
+
+button:focus {
+    box-shadow: none;
+    outline-style: none;
+    background-size: 20%;
+}
+
+button:hover {
+    background-size: 50%;
+    outline-style: none;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .4);
+    background-color: @primary;
+    color: transparent;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
+}
+
+
+#lock {
+    background-image: image(url("./icons-2/lock.png"));
+}
+
+#lock:hover {
+    background-image: image(url("./icons-2/lock-hover.png"));
+}
+
+#suspend {
+    background-image: image(url("./icons-2/sleep.png"));
+}
+
+#suspend:hover {
+    background-image: image(url("./icons-2/sleep-hover.png"));
+}
+
+#shutdown {
+    background-image: image(url("./icons-2/power.png"));
+}
+
+#shutdown:hover {
+    background-image: image(url("./icons-2/power-hover.png"));
+}
+
+#reboot {
+    background-image: image(url("./icons-2/restart.png"));
+}
+
+#reboot:hover {
+    background-image: image(url("./icons-2/restart-hover.png"));
+}
+
+#logout {
+    background-image: image(url("./icons-2/logout.png"));
+}
+
+#logout:hover {
+    background-image: image(url("./icons-2/logout-hover.png"));
+}
+
+#hibernate {
+    background-image: image(url("./icons-2/hibernate.png"));
+}
+
+#hibernate:hover {
+    background-image: image(url("./icons-2/hibernate-hover.png"));
+}

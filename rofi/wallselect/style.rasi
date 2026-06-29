@@ -1,0 +1,73 @@
+/*
+ * Wallpaper selector
+ * Centered, large previews, 5 items, horizontal scroll
+ */
+
+configuration {
+    modi: "drun,run";
+    font: "Fira Sans 12";
+    show-icons: true;
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+    drun-display-format: "{name}";
+    window-format: "{w} · {c} · {t}";
+}
+
+@import "~/.config/rofi/colors.rasi"
+@import "~/.config/rofi/wallselect/common.rasi"
+
+window {
+    width: 1400px;
+    x-offset: 0px;
+    y-offset: 0px;
+    location: center;
+    anchor: center;
+}
+
+mainbox {
+    children: ["listbox"];
+}
+
+listbox {
+    spacing: 10px;
+    background-color: transparent;
+    orientation: vertical;
+    children: ["inputbar", "message", "listview"];
+}
+
+listview {
+    columns: 5;
+    lines: 1;
+    scrollbar: false;
+    spacing: 8px;
+    cycle: false;
+    fixed-height: true;
+    fixed-columns: true;
+    flow: horizontal;
+    layout: vertical;
+}
+
+element {
+    padding: 8px;
+    orientation: vertical;
+    border-radius: 16px;
+    border: 2px;
+    border-color: transparent;
+}
+
+element selected.normal {
+    border-color: @selected;
+}
+
+element-icon {
+    size: 240px;
+    horizontal-align: 0.5;
+    border-radius: 12px;
+}
+
+element-text {
+    enabled: true;
+    horizontal-align: 0.5;
+    padding: 8px 0px 0px 0px;
+}
