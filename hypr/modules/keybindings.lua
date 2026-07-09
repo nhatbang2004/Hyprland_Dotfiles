@@ -15,6 +15,7 @@ local wallpaperSwitcher = "$HOME/.config/rofi/wallselect/script.sh"
 local wallpaperRandom   = "$HOME/.config/hypr/scripts/wallpaper_random.sh"
 local clipboard   = "$HOME/.config/hypr/scripts/clipboard_launcher.sh"
 local screenShot  = "$HOME/.config/hypr/scripts/screenshot.sh"
+local gameBrowser = "steam"
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
@@ -26,6 +27,8 @@ hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(logout))
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(gameBrowser))
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/copy.sh"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(wallpaperSwitcher))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))

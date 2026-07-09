@@ -39,3 +39,8 @@ require("modules.keybindings")
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
 require("modules.windowrules")
+---------------------
+---- HYPMISSION ----
+---------------------
+require("hyprpm.hypmission")
+
