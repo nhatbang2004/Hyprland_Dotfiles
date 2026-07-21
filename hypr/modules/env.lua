@@ -13,7 +13,6 @@ hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 hl.env("SDL_VIDEODRIVER", "wayland")
 hl.env("CLUTTER_BACKEND", "wayland")
 
-
 ---- XDG -----
 hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
 hl.env("CLUTTER_BACKEND", "wayland")
@@ -25,14 +24,10 @@ hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
 hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 hl.env("QT_QPA_PLATFORMTHEME", "gtk3")
 
-
-
 ----- Nvidia -----
 
 hl.env("GBM_BACKEND", "nvidia-drm")
 hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 hl.env("LIBVA_DRIVER_NAME", "nvidia")
-
+--hl.env("NVD_BACKEND", "direct")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
-
-
