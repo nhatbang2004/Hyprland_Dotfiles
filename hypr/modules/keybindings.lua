@@ -14,7 +14,7 @@ local wallpaperSwitcher = "$HOME/.config/rofi/wallselect/script.sh"
 local wallpaperRandom = "$HOME/.config/hypr/scripts/wallpaper_random.sh"
 local clipboard = "$HOME/.config/hypr/scripts/clipboard_launcher.sh"
 local screenShot = "$HOME/.config/hypr/scripts/screenshot.sh"
-
+local note = "obsidian"
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
@@ -29,6 +29,7 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(logout))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(wallpaperSwitcher))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(note))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lockScreen))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipboard))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(screenShot))
