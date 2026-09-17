@@ -56,3 +56,8 @@ input_path = '~/.config/matugen/templates/swaync-colors.css'
 output_path = '~/.config/swaync/matugen/matugen-swaync.css'
 post_hook = 'swaync-client -rs'
 
+# yazi
+
+[templates.yazi]
+input_path = './templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
