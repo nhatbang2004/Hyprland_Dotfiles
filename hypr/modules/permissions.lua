@@ -1,4 +1,3 @@
-
 -----------------------
 ----- PERMISSIONS -----
 -----------------------
@@ -17,4 +16,4 @@
 -- hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
 -- hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
 --
---hl.config({ xwayland = { force_zero_scaling = true } })
+hl.config({ xwayland = { force_zero_scaling = true } })
