@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if warp-cli status | grep -q "Status update: Connected"; then
+    warp-cli disconnect
+    notify-send "WARP" "Đã ngắt kết nối" -i network-offline
+else
+    warp-cli connect
+    notify-send "WARP" "Đã kết nối" -i network-vpn
+fi

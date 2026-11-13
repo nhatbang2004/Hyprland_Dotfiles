@@ -15,6 +15,7 @@ local wallpaperRandom = "$HOME/.config/hypr/scripts/wallpaper_random.sh"
 local clipboard = "$HOME/.config/hypr/scripts/clipboard_launcher.sh"
 local screenShot = "$HOME/.config/hypr/scripts/screenshot.sh"
 local note = "obsidian"
+local Warp = "$HOME/.config/hypr/scripts/warp-toggle"
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
@@ -26,10 +27,11 @@ hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(logout))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(wallpaperSwitcher))
+hl.bind(mainMod .. " + W", hl.dsp.global("quickshell:wallpaper"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(note))
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(Warp))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lockScreen))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipboard))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(screenShot))
@@ -39,8 +41,8 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(reload))
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(wallpaperRandom))
-
+--hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(wallpaperRandom))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(wallpaperSwitcher))
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
